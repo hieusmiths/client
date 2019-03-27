@@ -11,7 +11,7 @@ class App extends Component {
     super(props);
     this.state = {
       displayForm : false,
-      dataUser : [],
+      dataUser : DataUser,
       textForSearch : '',
       displayFormEdit : false,
     }
