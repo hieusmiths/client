@@ -2,17 +2,15 @@
   "name": "user_manager",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/hieusmiths.github.io/client/",
+  "homepage": "https://hieusmiths.github.io/client/",
   "dependencies": {
     "gh-pages": "^2.0.1",
-    
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-scripts": "2.1.8",
     "uuid": "^3.3.2"
   },
   "scripts": {
-  	
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
