@@ -4,7 +4,46 @@ import Jumbotron from './Header/Jumbotron';
 import Search from './Search';
 import Table from './Table';
 import CardAddUser from './CardAddUser';
-import DataUser  from './Data.json';
+//import DataUser  from './Data.json';
+const DataUser = [
+    {
+        "id" : 1,
+        "name" : "Minh Hiếu 1",
+        "tel"  : "0972715306",
+        "permission" : 1
+    },
+    {
+        "id" : 2,
+        "name" : "Minh Hiếu 2",
+        "tel"  : "0972715306",
+        "permission" : 2
+    },
+    {
+        "id" : 3,
+        "name" : "Minh Hiếu 3",
+        "tel"  : "0972715306",
+        "permission" : 3
+    },
+    {
+        "id" : 4,
+        "name" : "Minh Hiếu 4",
+        "tel"  : "0972715306",
+        "permission" : 1
+    },
+    {
+        "id" : 5,
+        "name" : "Minh Hiếu 5",
+        "tel"  : "0972715306",
+        "permission" : 3
+    },
+    {
+        "id" : 6,
+        "name" : "Man 5",
+        "tel"  : "0972715306",
+        "permission" : 3
+    }
+    
+];
 const uuidv1 = require('uuid/v1');
 class App extends Component {
   constructor(props) {
@@ -12,42 +51,6 @@ class App extends Component {
     this.state = {
       displayForm : false,
       dataUser : [
-        {
-            "id" : 1,
-            "name" : "Minh Hiếu 1",
-            "tel"  : "0972715306",
-            "permission" : 1
-        },
-        {
-            "id" : 2,
-            "name" : "Minh Hiếu 2",
-            "tel"  : "0972715306",
-            "permission" : 2
-        },
-        {
-            "id" : 3,
-            "name" : "Minh Hiếu 3",
-            "tel"  : "0972715306",
-            "permission" : 3
-        },
-        {
-            "id" : 4,
-            "name" : "Minh Hiếu 4",
-            "tel"  : "0972715306",
-            "permission" : 1
-        },
-        {
-            "id" : 5,
-            "name" : "Minh Hiếu 5",
-            "tel"  : "0972715306",
-            "permission" : 3
-        },
-        {
-            "id" : 6,
-            "name" : "Man 5",
-            "tel"  : "0972715306",
-            "permission" : 3
-        }
         
     ],
       textForSearch : '',
