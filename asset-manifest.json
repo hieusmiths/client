@@ -1,13 +1,13 @@
 {
-  "main.css": "/hieusmiths.github.io/client/static/css/main.9bed2d61.chunk.css",
-  "main.js": "/hieusmiths.github.io/client/static/js/main.4f7c9a81.chunk.js",
-  "main.js.map": "/hieusmiths.github.io/client/static/js/main.4f7c9a81.chunk.js.map",
-  "runtime~main.js": "/hieusmiths.github.io/client/static/js/runtime~main.f41be86e.js",
-  "runtime~main.js.map": "/hieusmiths.github.io/client/static/js/runtime~main.f41be86e.js.map",
-  "static/js/2.7c5dc20e.chunk.js": "/hieusmiths.github.io/client/static/js/2.7c5dc20e.chunk.js",
-  "static/js/2.7c5dc20e.chunk.js.map": "/hieusmiths.github.io/client/static/js/2.7c5dc20e.chunk.js.map",
-  "index.html": "/hieusmiths.github.io/client/index.html",
-  "precache-manifest.a6e1a44b1d2ab42a321b1cb991e98fbf.js": "/hieusmiths.github.io/client/precache-manifest.a6e1a44b1d2ab42a321b1cb991e98fbf.js",
-  "service-worker.js": "/hieusmiths.github.io/client/service-worker.js",
-  "static/css/main.9bed2d61.chunk.css.map": "/hieusmiths.github.io/client/static/css/main.9bed2d61.chunk.css.map"
+  "main.css": "/client/static/css/main.9bed2d61.chunk.css",
+  "main.js": "/client/static/js/main.c95b2944.chunk.js",
+  "main.js.map": "/client/static/js/main.c95b2944.chunk.js.map",
+  "runtime~main.js": "/client/static/js/runtime~main.3fca2621.js",
+  "runtime~main.js.map": "/client/static/js/runtime~main.3fca2621.js.map",
+  "static/js/2.7c5dc20e.chunk.js": "/client/static/js/2.7c5dc20e.chunk.js",
+  "static/js/2.7c5dc20e.chunk.js.map": "/client/static/js/2.7c5dc20e.chunk.js.map",
+  "index.html": "/client/index.html",
+  "precache-manifest.7364cb9165314a45515c3df3a322f77b.js": "/client/precache-manifest.7364cb9165314a45515c3df3a322f77b.js",
+  "service-worker.js": "/client/service-worker.js",
+  "static/css/main.9bed2d61.chunk.css.map": "/client/static/css/main.9bed2d61.chunk.css.map"
 }
