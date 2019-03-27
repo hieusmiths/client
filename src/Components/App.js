@@ -4,72 +4,32 @@ import Jumbotron from './Header/Jumbotron';
 import Search from './Search';
 import Table from './Table';
 import CardAddUser from './CardAddUser';
-//import DataUser  from './Data.json';
-const DataUser = [
-    {
-        "id" : 1,
-        "name" : "Minh Hiếu 1",
-        "tel"  : "0972715306",
-        "permission" : 1
-    },
-    {
-        "id" : 2,
-        "name" : "Minh Hiếu 2",
-        "tel"  : "0972715306",
-        "permission" : 2
-    },
-    {
-        "id" : 3,
-        "name" : "Minh Hiếu 3",
-        "tel"  : "0972715306",
-        "permission" : 3
-    },
-    {
-        "id" : 4,
-        "name" : "Minh Hiếu 4",
-        "tel"  : "0972715306",
-        "permission" : 1
-    },
-    {
-        "id" : 5,
-        "name" : "Minh Hiếu 5",
-        "tel"  : "0972715306",
-        "permission" : 3
-    },
-    {
-        "id" : 6,
-        "name" : "Man 5",
-        "tel"  : "0972715306",
-        "permission" : 3
-    }
-    
-];
+import DataUser  from './Data.json';
+
 const uuidv1 = require('uuid/v1');
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       displayForm : false,
-      dataUser : [
-        
-    ],
+      dataUser : DataUser,
       textForSearch : '',
       displayFormEdit : false,
     }
   }
   
   
-  componentWillMount() {
-    if(localStorage.getItem("User") === 0 ){
-      localStorage.setItem("User",JSON.stringify(DataUser));
-    }
-    else{
-      var dataLocalstorage = JSON.parse(localStorage.getItem("User"));
-      this.setState({
-        dataUser: dataLocalstorage,
-      })
-    }
-  }
+  // componentWillMount() {
+  //   if(localStorage.getItem("User") === 0 ){
+  //     localStorage.setItem("User",JSON.stringify(DataUser));
+  //   }
+  //   else{
+  //     var dataLocalstorage = JSON.parse(localStorage.getItem("User"));
+  //     this.setState({
+  //       dataUser: dataLocalstorage,
+  //     })
+  //   }
+  // }
   
 
   changeStatus = () =>
@@ -107,7 +67,7 @@ class App extends Component {
       return true;
       }
       )
-      localStorage.setItem("User", JSON.stringify(this.state.dataUser));
+      // localStorage.setItem("User", JSON.stringify(this.state.dataUser));
     }
     // ở forEach key là index nhé.
     // deleteById = (byId) => {
@@ -130,7 +90,7 @@ class App extends Component {
       this.setState({
         dataUser: tempData,
       });
-      localStorage.setItem("User", JSON.stringify(tempData));
+      // localStorage.setItem("User", JSON.stringify(tempData));
         // ở find này mà return về fasle là nó out ra luôn đó nhé.
     } 
   conectForSearch = (dl)=>{
@@ -167,7 +127,7 @@ class App extends Component {
   }
 
   render() {
-    localStorage.setItem("User", JSON.stringify(this.state.dataUser));
+    // localStorage.setItem("User", JSON.stringify(this.state.dataUser));
     console.log(this.state.dataUser);
     var result = [];
     this.state.dataUser.forEach( (item) => {
