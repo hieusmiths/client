@@ -11,7 +11,7 @@ class App extends Component {
     super(props);
     this.state = {
       displayForm : false,
-      dataUser : DataUser,
+      dataUser : [],
       textForSearch : '',
       displayFormEdit : false,
     }
@@ -126,7 +126,7 @@ class App extends Component {
   }
 
   render() {
-    // localStorage.setItem("User", JSON.stringify(this.state.dataUser));
+    localStorage.setItem("User", JSON.stringify(this.state.dataUser));
     console.log(this.state.dataUser);
     var result = [];
     this.state.dataUser.forEach( (item) => {
